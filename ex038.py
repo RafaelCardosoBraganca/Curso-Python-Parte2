@@ -12,4 +12,4 @@ elif n2 > n:
     print('{} é maior que {}'.format(n2, n))
 else:
     print('{} e {} são iguais!'.format(n, n2))
-    
+

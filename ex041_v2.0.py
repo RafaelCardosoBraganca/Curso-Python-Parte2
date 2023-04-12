@@ -10,13 +10,18 @@ from datetime import date
 atual = date.today().year
 nasc = int(input('Qual o ano de nascimento do atleta: '))
 idade = atual - nasc
-if idade > 14 and idade <=19:
-    print('{} anos. Categoria: JÚNIOR'.format(idade)) #sei que está desordenado, mas só funcionou assim. O pq eu não sei kkkk
-elif idade > 25:
-    print('{} anos. Categoria: MASTER'.format(idade))
-elif 25 <= idade > 19:
-    print('{} anos. Categoria: SÊNIOR'.format(idade))
-elif idade <= 14 and idade > 9:
-    print('{} anos. Categoria: INFANTIL'.format(idade))
-elif idade <= 9:
+
+if idade <= 9:
     print('{} anos. Categoria: MIRIM'.format(idade))
+elif idade <= 14:
+    print('{} anos. Categoria: INFANTIL'.format(idade))
+elif idade <= 19 :
+    print('{} anos. Categoria: JÚNIOR'.format(idade))
+elif idade <= 25:
+    print('{} anos. Categoria: SÊNIOR'.format(idade))
+else:
+    print('{} anos. Categoria: MASTER'.format(idade))
+    
+
+
+
