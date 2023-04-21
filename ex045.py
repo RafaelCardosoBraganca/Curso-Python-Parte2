@@ -26,7 +26,7 @@ else:
     print('O computador escolheu {} \nO jogador escolheu {}'.format(lista[computador], lista[jogador]))
     print('-=-'*20)
 
-    if jogador == 0 and computador == 2 or jogador == 1 and computador == 0 or jogador == 2 and computador == 0:
+    if jogador == 0 and computador == 2 or jogador == 1 and computador == 0 or jogador == 2 and computador == 1:
         print('O JOGADOR VENCEU!') 
     elif jogador == computador:
         print('EMPATE!')
